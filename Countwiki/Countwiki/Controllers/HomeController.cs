@@ -33,14 +33,22 @@ namespace Countwiki.Controllers
         [HttpPost]
         public IActionResult Count(WikiCountViewModel wikiCountViewModel)
         {
-            // I have not validated here that it is a wikipedia page, currently it will work for all pages.
-            string wikiContent =  GetHtmlStringFromWikipedia(wikiCountViewModel.WikiPageURL);
+            try
+            {
+                // I have not validated here that it is a wikipedia page, currently it will work for all pages.
+                string wikiContent = GetHtmlStringFromWikipedia(wikiCountViewModel.WikiPageURL);
 
-            int count = _wordCounter.Count(wikiContent);
+                int count = _wordCounter.Count(wikiContent);
 
-            wikiCountViewModel.WordCount = count;
+                wikiCountViewModel.WordCount = count;
+            }
+            catch (Exception exception)
+            {
+                TempData["ErrorMessage"] = $"Something went wrong counting the words at :{wikiCountViewModel.WikiPageURL}";
+            }
 
             return RedirectToAction("Index", "Home", wikiCountViewModel);
+            
         }
 
         /// <summary>

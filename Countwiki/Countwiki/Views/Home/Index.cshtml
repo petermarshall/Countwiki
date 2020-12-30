@@ -23,5 +23,11 @@
             @Html.LabelFor(m => m.WordCount)
             @Html.DisplayFor(m => m.WordCount)
         </form>
+
+        @if (TempData.ContainsKey("ErrorMessage"))
+        {
+            var errorMessage = TempData["ErrorMessage"] as string;
+            <h1>@errorMessage</h1>
+        }
     </div>
 </div>
