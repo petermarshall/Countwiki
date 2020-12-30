@@ -1,7 +1,7 @@
 # Countwiki
 
 <br>
-## Created for QUAL ID.
+<h3>Created for QUAL ID.</h3>
 <br>
 I have done this in dot net 5. It's a standard ASP.NET MVC web site. There is a service called **WordCounter** that counts the words in an HTML string.
 It has a dependency on the HTML Agility Pack. I considered using a DOM Document, but as that would depend on parsed XML was not suer it would work. So I used the HTML Agility Pack Library to parse the html.
