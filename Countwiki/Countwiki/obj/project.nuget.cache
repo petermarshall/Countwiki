@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "tUFWgnmXqbCX8xpfe9mqaAZ9wOXMVVG326WzrWdSt83q+S5sFtRrnEkB4iUMvsrWOnB/rKuYEiPpAF/iDKKRSA==",
+  "dgSpecHash": "uPqmw49GUzY1fOKoM+if7/ccXkVJEgRPCegeehfB42s9BPid32j3n2WEiWjd7rwFK1BNKpeEczQvfUL8lFkk5A==",
   "success": true,
   "projectFilePath": "C:\\PROJECTS\\Countwiki\\Countwiki\\Countwiki\\Countwiki.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\marsh\\.nuget\\packages\\htmlagilitypack\\1.11.29\\htmlagilitypack.1.11.29.nupkg.sha512"
+  ],
   "logs": []
 }

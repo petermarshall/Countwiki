@@ -9,7 +9,6 @@ C:\PROJECTS\Countwiki\Countwiki\Countwiki\bin\Debug\net5.0\ref\Countwiki.dll
 C:\PROJECTS\Countwiki\Countwiki\Countwiki\bin\Debug\net5.0\Countwiki.pdb
 C:\PROJECTS\Countwiki\Countwiki\Countwiki\bin\Debug\net5.0\Countwiki.Views.dll
 C:\PROJECTS\Countwiki\Countwiki\Countwiki\bin\Debug\net5.0\Countwiki.Views.pdb
-C:\PROJECTS\Countwiki\Countwiki\Countwiki\obj\Debug\net5.0\Countwiki.csprojAssemblyReference.cache
 C:\PROJECTS\Countwiki\Countwiki\Countwiki\obj\Debug\net5.0\Countwiki.GeneratedMSBuildEditorConfig.editorconfig
 C:\PROJECTS\Countwiki\Countwiki\Countwiki\obj\Debug\net5.0\Countwiki.AssemblyInfoInputs.cache
 C:\PROJECTS\Countwiki\Countwiki\Countwiki\obj\Debug\net5.0\Countwiki.AssemblyInfo.cs
@@ -38,3 +37,4 @@ C:\PROJECTS\Countwiki\Countwiki\Countwiki\obj\Debug\net5.0\ref\Countwiki.dll
 C:\PROJECTS\Countwiki\Countwiki\Countwiki\obj\Debug\net5.0\Countwiki.pdb
 C:\PROJECTS\Countwiki\Countwiki\Countwiki\obj\Debug\net5.0\Countwiki.genruntimeconfig.cache
 C:\PROJECTS\Countwiki\Countwiki\Countwiki\obj\Debug\net5.0\Countwiki.csproj.CopyComplete
+C:\PROJECTS\Countwiki\Countwiki\Countwiki\bin\Debug\net5.0\HtmlAgilityPack.dll
