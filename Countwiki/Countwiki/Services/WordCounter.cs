@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Countwiki.Services
 {
-    public class WordCounter
+    public class WordCounter : IWordCounter
     {
         public WordCounter()
         {
