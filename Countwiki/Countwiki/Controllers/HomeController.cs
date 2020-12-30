@@ -18,14 +18,18 @@ namespace Countwiki.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(WikiCountViewModel wikiCountViewModel)
         {
-            return View();
+            if(wikiCountViewModel == null)
+            {
+                wikiCountViewModel = new WikiCountViewModel();
+            }
+            return View(wikiCountViewModel);
         }
-
-        public IActionResult Privacy()
+        [HttpPost]
+        public IActionResult Count(WikiCountViewModel wikiCountViewModel)
         {
-            return View();
+            return RedirectToAction("Index", "Home", wikiCountViewModel);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -32,7 +32,8 @@ namespace Countwiki.Services
 
                 var words = textNode.InnerText.Split(' ', StringSplitOptions.RemoveEmptyEntries)
                     .Where(s => Char.IsLetter(s[0]));
-                // StringSplitOptions.RemoveEmptyEntries - Omit array elements that contain an empty string from the result.                
+                // StringSplitOptions.RemoveEmptyEntries - Omit array elements that contain an empty string from the result.
+                // and only count things starting with a letter.
                     
                 int wordsInNode = words.Count();
 
