@@ -20,6 +20,7 @@ namespace Countwiki.Services
 
             // work with the body and ignore the rest
             var body = htmlDocument.DocumentNode.SelectSingleNode("//body");
+            if(body == null) { return 0; } // no body element found
 
             // selecting just text nodes you may get javascript in ther as well.
             // so "//text()[not(parent::script)]" eliminates the javscript from the count
@@ -29,7 +30,8 @@ namespace Countwiki.Services
             foreach (var textNode in textNodes)
             {
 
-                var words = textNode.InnerText.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+                var words = textNode.InnerText.Split(' ', StringSplitOptions.RemoveEmptyEntries)
+                    .Where(s => Char.IsLetter(s[0]));
                 // StringSplitOptions.RemoveEmptyEntries - Omit array elements that contain an empty string from the result.                
                     
                 int wordsInNode = words.Count();

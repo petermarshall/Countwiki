@@ -38,3 +38,4 @@ C:\PROJECTS\Countwiki\Countwiki\Countwiki\obj\Debug\net5.0\Countwiki.pdb
 C:\PROJECTS\Countwiki\Countwiki\Countwiki\obj\Debug\net5.0\Countwiki.genruntimeconfig.cache
 C:\PROJECTS\Countwiki\Countwiki\Countwiki\obj\Debug\net5.0\Countwiki.csproj.CopyComplete
 C:\PROJECTS\Countwiki\Countwiki\Countwiki\bin\Debug\net5.0\HtmlAgilityPack.dll
+C:\PROJECTS\Countwiki\Countwiki\Countwiki\obj\Debug\net5.0\Countwiki.csprojAssemblyReference.cache
