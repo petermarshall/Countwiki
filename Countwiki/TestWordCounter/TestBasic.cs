@@ -30,13 +30,13 @@ namespace TestWordCounter
         }
 
         [TestMethod]
-        public void TestCountComplex()
+        public void TestCountDistinctComplex()
         {
             WordCounter wordCounter = new WordCounter();
 
             int result = wordCounter.Count(ComplexHtml());
 
-            Assert.IsTrue(result == 2805);
+            Assert.IsTrue(result == 1114);
         }
 
 

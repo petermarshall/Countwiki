@@ -7,6 +7,6 @@ namespace Countwiki.Services
 {
     public interface IWordCounter
     {
-        int Count(string html);
+        int CountDistinct(string html);
     }
 }
