@@ -38,11 +38,11 @@ namespace Countwiki.Controllers
                 // I have not validated here that it is a wikipedia page, currently it will work for all pages.
                 string wikiContent = GetHtmlStringFromWikipedia(wikiCountViewModel.WikiPageURL);
 
-                int count = _wordCounter.Count(wikiContent);
+                int count = _wordCounter.CountDistinct(wikiContent);
 
                 wikiCountViewModel.WordCount = count;
             }
-            catch (Exception exception)
+            catch 
             {
                 TempData["ErrorMessage"] = $"Something went wrong counting the words at :{wikiCountViewModel.WikiPageURL}";
             }

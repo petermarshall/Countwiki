@@ -14,7 +14,7 @@ namespace TestWordCounter
         {
             WordCounter wordCounter = new WordCounter();
 
-            int result = wordCounter.Count("xxx");
+            int result = wordCounter.CountDistinct("xxx");
 
             Assert.IsTrue(result == 0);
         }
@@ -24,7 +24,7 @@ namespace TestWordCounter
         {
             WordCounter wordCounter = new WordCounter();
 
-            int result = wordCounter.Count("<html><body>xxx</body></html>");
+            int result = wordCounter.CountDistinct("<html><body>xxx</body></html>");
 
             Assert.IsTrue(result == 1);
         }
@@ -34,7 +34,7 @@ namespace TestWordCounter
         {
             WordCounter wordCounter = new WordCounter();
 
-            int result = wordCounter.Count(ComplexHtml());
+            int result = wordCounter.CountDistinct(ComplexHtml());
 
             Assert.IsTrue(result == 1114);
         }
